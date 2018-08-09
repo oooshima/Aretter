@@ -18,25 +18,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8FW-Og-tef">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8FW-Og-tef">
                                 <rect key="frame" x="190" y="260" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="NEW"/>
                                 <connections>
                                     <segue destination="y1R-cf-dDd" kind="show" id="UX5-sf-fos"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmw-1m-XkV">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmw-1m-XkV">
                                 <rect key="frame" x="187" y="336" width="41" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="SCAN"/>
                                 <connections>
                                     <segue destination="n29-bX-T3N" kind="show" id="SJ5-bQ-qOX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abA-bZ-fW3">
-                                <rect key="frame" x="182" y="419" width="57" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abA-bZ-fW3">
+                                <rect key="frame" x="179" y="419" width="57" height="30"/>
                                 <state key="normal" title="FOLDER"/>
                                 <connections>
                                     <segue destination="uh8-ss-oHU" kind="show" id="cKB-eP-5eR"/>
@@ -44,6 +41,14 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8FW-Og-tef" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="196" id="0PH-ue-fbA"/>
+                            <constraint firstItem="wmw-1m-XkV" firstAttribute="top" secondItem="8FW-Og-tef" secondAttribute="bottom" constant="46" id="BOk-rA-UT3"/>
+                            <constraint firstItem="wmw-1m-XkV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W7s-4j-XZG"/>
+                            <constraint firstItem="abA-bZ-fW3" firstAttribute="top" secondItem="wmw-1m-XkV" secondAttribute="bottom" constant="53" id="XwL-jv-CrI"/>
+                            <constraint firstItem="abA-bZ-fW3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fw6-d1-rYJ"/>
+                            <constraint firstItem="8FW-Og-tef" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t6d-0i-XJR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="HOME" id="EZk-9a-fzd"/>
@@ -66,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EW7-IC-eYs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1081" y="-726"/>
+            <point key="canvasLocation" x="1079.7101449275362" y="-726.35869565217399"/>
         </scene>
         <!--New Controller-->
         <scene sceneID="Web-cg-odY">
@@ -76,35 +81,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jKF-zE-PPq">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jKF-zE-PPq">
                                 <rect key="frame" x="22" y="155" width="370" height="370"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="370" id="9VK-0D-rZv"/>
+                                    <constraint firstAttribute="width" constant="370" id="djR-rM-emH"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acf-7L-Lbb">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acf-7L-Lbb">
                                 <rect key="frame" x="74" y="582" width="37" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="37" id="kj5-Rs-MMc"/>
+                                    <constraint firstAttribute="height" constant="30" id="uTF-1u-c0R"/>
+                                </constraints>
                                 <state key="normal" title="TAKE"/>
                                 <connections>
                                     <action selector="tappedTakePhoto" destination="y1R-cf-dDd" eventType="touchDown" id="hdk-8t-ZAl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVz-Fl-aMJ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVz-Fl-aMJ">
                                 <rect key="frame" x="291" y="582" width="55" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="F0R-fj-yaD"/>
+                                    <constraint firstAttribute="height" constant="30" id="qNb-qX-fDB"/>
+                                </constraints>
                                 <state key="normal" title="SELECT"/>
                                 <connections>
                                     <action selector="openAlbum" destination="y1R-cf-dDd" eventType="touchDown" id="Gsj-pc-t5m"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="マーカを登録しましょう" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UD5-n7-xly">
-                                <rect key="frame" x="64" y="85" width="282" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="マーカを登録しましょう" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UD5-n7-xly">
+                                <rect key="frame" x="66" y="85" width="282" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="282" id="62F-Bc-qQb"/>
+                                    <constraint firstAttribute="height" constant="52" id="Lyz-zR-aJb"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NVz-Fl-aMJ" firstAttribute="top" secondItem="jKF-zE-PPq" secondAttribute="bottom" constant="57" id="4is-am-p4I"/>
+                            <constraint firstItem="jKF-zE-PPq" firstAttribute="centerX" secondItem="4ZA-Ay-HFz" secondAttribute="centerX" id="4wm-BX-SzW"/>
+                            <constraint firstItem="jKF-zE-PPq" firstAttribute="top" secondItem="UD5-n7-xly" secondAttribute="bottom" constant="18" id="7ZQ-bm-wLE"/>
+                            <constraint firstItem="acf-7L-Lbb" firstAttribute="top" secondItem="jKF-zE-PPq" secondAttribute="bottom" constant="57" id="7je-Sa-OfR"/>
+                            <constraint firstItem="UD5-n7-xly" firstAttribute="top" secondItem="KEC-a0-dFS" secondAttribute="top" constant="21" id="8ei-cM-DX1"/>
+                            <constraint firstItem="KEC-a0-dFS" firstAttribute="trailing" secondItem="NVz-Fl-aMJ" secondAttribute="trailing" constant="68" id="AgC-dh-gpv"/>
+                            <constraint firstItem="acf-7L-Lbb" firstAttribute="leading" secondItem="KEC-a0-dFS" secondAttribute="leading" constant="74" id="XtL-OH-2hx"/>
+                            <constraint firstItem="UD5-n7-xly" firstAttribute="centerX" secondItem="4ZA-Ay-HFz" secondAttribute="centerX" id="gh9-ij-IJV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="KEC-a0-dFS"/>
                     </view>
                     <navigationItem key="navigationItem" title="NEW" id="XPQ-ld-bcb"/>
