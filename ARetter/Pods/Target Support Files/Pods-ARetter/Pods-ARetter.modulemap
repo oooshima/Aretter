@@ -1,0 +1,6 @@
+framework module Pods_ARetter {
+  umbrella header "Pods-ARetter-umbrella.h"
+
+  export *
+  module * { export * }
+}
