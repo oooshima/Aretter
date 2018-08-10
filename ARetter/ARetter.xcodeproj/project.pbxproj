@@ -17,6 +17,9 @@
 		F2B28374211B1CAF0044CED3 /* NewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B28373211B1CAF0044CED3 /* NewController.swift */; };
 		F2B28376211B1E390044CED3 /* ScanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B28375211B1E390044CED3 /* ScanController.swift */; };
 		F2B28378211B1EB80044CED3 /* FolderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B28377211B1EB80044CED3 /* FolderController.swift */; };
+		F2B2837D211DA31D0044CED3 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B2837C211DA31D0044CED3 /* MobileCoreServices.framework */; };
+		F2B2837F211DA93F0044CED3 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B2837E211DA93F0044CED3 /* Photos.framework */; };
+		F2B28381211DABB10044CED3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B28380211DABB10044CED3 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		F2B28373211B1CAF0044CED3 /* NewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewController.swift; sourceTree = "<group>"; };
 		F2B28375211B1E390044CED3 /* ScanController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanController.swift; sourceTree = "<group>"; };
 		F2B28377211B1EB80044CED3 /* FolderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderController.swift; sourceTree = "<group>"; };
+		F2B2837C211DA31D0044CED3 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F2B2837E211DA93F0044CED3 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		F2B28380211DABB10044CED3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2B28381211DABB10044CED3 /* AVFoundation.framework in Frameworks */,
+				F2B2837F211DA93F0044CED3 /* Photos.framework in Frameworks */,
+				F2B2837D211DA31D0044CED3 /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +96,7 @@
 				F2B28359211B180D0044CED3 /* ARetterTests */,
 				F2B28364211B180D0044CED3 /* ARetterUITests */,
 				F2B28343211B180A0044CED3 /* Products */,
+				F2B2837B211DA31D0044CED3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +142,16 @@
 				F2B28367211B180D0044CED3 /* Info.plist */,
 			);
 			path = ARetterUITests;
+			sourceTree = "<group>";
+		};
+		F2B2837B211DA31D0044CED3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2B28380211DABB10044CED3 /* AVFoundation.framework */,
+				F2B2837E211DA93F0044CED3 /* Photos.framework */,
+				F2B2837C211DA31D0044CED3 /* MobileCoreServices.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
